@@ -2,6 +2,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline, Container } from "@mui/material";
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 //Pages
 import HomePage from '../../features/home/HomePage';
@@ -10,6 +12,7 @@ import AboutPage from '../../features/about/AboutPage';
 import ContactPage from '../../features/contact/ContactPage';
 import Catalog from "../../features/catalog/Catalog";
 import Header from "./Header";
+
 
 function App() {
 
@@ -31,6 +34,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme} >
+      <ToastContainer position='bottom-right'/>
       <CssBaseline/>
       <Header darkMode={darkMode} handleThemeChange={handleThemeChange}/>     
       <Container>
