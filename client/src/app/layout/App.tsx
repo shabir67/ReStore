@@ -1,7 +1,7 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline, Container } from "@mui/material";
 import { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -12,6 +12,7 @@ import AboutPage from '../../features/about/AboutPage';
 import ContactPage from '../../features/contact/ContactPage';
 import Catalog from "../../features/catalog/Catalog";
 import Header from "./Header";
+import ServerError from '../errors/ServerError';
 
 
 function App() {
@@ -38,13 +39,12 @@ function App() {
       <CssBaseline/>
       <Header darkMode={darkMode} handleThemeChange={handleThemeChange}/>     
       <Container>
-        <Routes>
-          <Route path='/' element={<HomePage />}/>
-          <Route path='/catalog' element={<Catalog />}/>
-          <Route path='/catalog/:id' element={<ProductDetails />}/>
-          <Route path='/about' element={<AboutPage />}/>
-          <Route path='/contact' element={<ContactPage />}/>
-        </Routes>
+          <Route exact path='/' component={HomePage}/>
+          <Route exact path='/catalog' component={Catalog}/>
+          <Route path='/catalog/:id' component={ProductDetails}/>
+          <Route path='/about' component={AboutPage}/>
+          <Route path='/contact' component={ContactPage}/>
+          <Route path='/server-error' component={ServerError}/>
       </Container>
     </ThemeProvider>
   );

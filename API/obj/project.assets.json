@@ -1255,19 +1255,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DEV\\.nuget\\packages\\": {}
+    "/Users/shobir/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DEV\\Documents\\Learn\\ReStore-dotnet5\\API\\API.csproj",
+      "projectUniqueName": "/Users/shobir/Developer/Belajar/ReStore/API/API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\DEV\\Documents\\Learn\\ReStore-dotnet5\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\DEV\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DEV\\Documents\\Learn\\ReStore-dotnet5\\API\\obj\\",
+      "projectPath": "/Users/shobir/Developer/Belajar/ReStore/API/API.csproj",
+      "packagesPath": "/Users/shobir/.nuget/packages/",
+      "outputPath": "/Users/shobir/Developer/Belajar/ReStore/API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DEV\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/shobir/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1324,7 +1324,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
       }
     }
   }
